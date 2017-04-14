@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+  <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+	<title>Lab 3 Java script</title>
+</head>
+
+<body>
+<h1 id="header">Insert your information</h1>
+<form id="form">
+	<!-- Name -->
+	First name:
+  <input id="firstname" type="text" name="firstname"><br><br>
+  	Last name:
+  <input id="lastname" type="text" name="lastname"><br><br>
+    Citizen number:
+  <input id="citizenId" type="text" name="citizenId"  maxlength="13" placeholder="13  number"><br><br>
+    Birthday:
+  <input id="birthday" type="date" name="birthday" onchange="calculateInfo()"><br><br>
+  Birthday of week :
+  <input id="dayofbirth" type="text" name="dayofbirth" readonly><br><br>
+
+  Zodiac Sign:
+  <input id="zodiacSign" type="text" name="zodiacSign"  readonly><br><br>
+
+  ZodiacYear:
+  <input id="zodiacYear" type="text" name="zodiacYear" readonly><br><br>
+
+
+  <!-- Adress -->
+  House number:
+  <input id="housenumber" type="text" name="housenumber"><br><br>
+  Street:
+  <input id="street" type="text" name="street"><br><br>
+  City:
+  <input id="city" type="text" name="city"><br><br>
+  Province:
+  <input id="province" type="text" name="province"><br><br>
+  Zipcode:
+  <input id="zipcode" type="text" maxlength="5" name="zipcode"><br><br>
+
+  <!-- phone -->
+  Phone number:
+  <input id="phonenumber" type="text" name="phonenumber" placeholder="+66x-xxx-xxxx"><br><br>
+  Cell phone number:
+  <input id="cellphonenumber" type="text" name="cellphonenumber" placeholder="+66xx-xxx-xxxx"><br><br>
+
+
+
+  <input type="button" onclick="save()" value="Save">
+  <input type="button" onclick="validate()" value="Submit">
+  <input type="reset" value="Cancel">
+</form>
+
+
+<table id="myTable">
+</table>
+
+
+</body>
+<script type="text/javascript" src="js/home.js"></script>
+<!-- <p id="after"> </p> -->
+</html>

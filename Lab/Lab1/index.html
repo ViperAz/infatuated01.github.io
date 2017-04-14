@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ 	<title >WELCOME To My PROFILE</title>
+ </head>
+
+ <style type="text/css">
+ div.Bodys {
+ 	background-color: white;
+ 	margin: 10px;
+ 	max-width: 300px;
+ 	border: 3px black;
+
+
+ }
+.Head {
+ 	background-color: white;
+ 	border: 10px solid-black;
+ 	text-align: center;
+ }
+ .Propic{
+ 	width: 640px;
+ 	height: 480px; 
+ 	align-self: center;
+ }
+ </style>
+ <!-- This is body -->
+ <body background="Img/background.jpg">
+<p id="top"></p>
+ 	<h1 class="Head" ">Welcome To My Profile</h1>
+ <a href="#Pro">Profile</a>    <a href="#bot">Go to Bottom</a>
+ <hr>
+ <img src="Img/handsome.jpg" id="ProPic" alt="ProImg" class="Propic" >
+
+  <div id="Bodys" class="Bodys">
+ <p id="Pro">
+ 	<strong>
+ 		Name :
+ 	</strong>  
+ 	Kanutm  Setasathian
+ 	</p>
+ <p>
+ 	<strong>
+ 		NickName :
+ 	</strong>
+ 	 ACT
+ 	 </p>
+ <p>
+ 	<strong>
+ 	BirthDate :
+ 	</strong>
+ 	  31/03/1995
+ 	  </p>
+ <p>
+ 	<strong>
+ 	Favortie Food :
+ 	</strong>
+ 	  </p>
+ <ul style="list-style-type:circle">
+  <li>Pizza</li>
+  <li>Fried rice</li>
+  <li>Steak</li>
+</ul>
+ <p>
+ 	<strong>
+ 	Email :
+ 	</strong>
+ 	  </p>
+ <ul style="list-style-type:circle">
+  <li>infatuated01@hotmail.com</li>
+  <li>infatuated01@gmail.com</li>
+  <li>kanutm.s@ku.th</li>
+</ul> 
+ <p>
+ 	<strong>
+ 	Favortie Hobbies :
+ 	</strong>
+ 	  </p>
+ <ul style="list-style-type:circle">
+  <li>Swimming</li>
+  <li>surfing internet</li>
+  <li>Eating</li>
+  <li>Playing computer games</li>
+</ul>	 
+ <p>
+ 	<strong>
+ 		Favorite Movies :
+ 	</strong>
+ 	<a href="fav-mov.html">
+ 	<br>
+ 	 <img src="Img/movie-ico.png" alt="movie" style="width:42px;height:42px;border:0;">
+ 	 </a>
+ 	 </p> 
+ <p>
+ 	<strong>Address :</strong>
+ 	<address>
+ 	161/139 <br>
+ 	Soi.Vipaodrangsit76<br>
+ 	VipaodrungsitRoad<br>
+ 	Donmuang<br>
+ 	Airport<br>
+ 	Bangkok<br>
+ 	10210<br>
+ 	</address>
+ 	</p>
+<p>
+	<strong>
+	Personal Skill
+</strong>
+
+  </p>
+
+
+
+ <button type="button" onclick="DeleteAll()">I'm Bored</button>
+  <button type="button" onclick="ChangePic(1)">I'm Handsome</button>
+  <button type="button" onclick="ChangePic(0)">I'm Not</button>
+  </div>
+  <hr>
+  <p>
+	<strong>
+	Social Media :
+</strong>
+  </p>
+  <a href="https://www.facebook.com/Kanutm">
+  <img src="Img/fb-ico.png" alt="facebook" style="width:42px;height:42px;border:0;">
+</a>
+
+ </body>
+ <p id="bot"></p>
+ <a href="#top">Go to Top</a>
+ </html>
+
+ <script type="text/javascript">
+ function DeleteAll() {
+ 	document.getElementById("Bodys").innerHTML = "All Gone !!"
+ 	document.getElementById('ProPic').src = "Img/eiei.jpg";
+ }
+ function ChangePic(val) {
+ 	if (val==1){
+ 		pic = "Img/handsome.jpg"
+ 	}
+ 	else{
+ 		pic  = "Img/eiei.jpg"
+ 	}
+document.getElementById('ProPic').src = pic;
+ }
+ </script>
+ <noscript>Your Potato are too old. Buy a new one !!</noscript>

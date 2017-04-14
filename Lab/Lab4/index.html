@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 4 JQuery and AJax</title>
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link href="https://fonts.googleapis.com/css?family=Chonburi" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+<h1 id="header">Insert your information</h1>
+<form id="form">
+	<!-- Name -->
+	First name:
+	<input id="firstname" type="text" name="firstname"><br><br>
+		Last name:
+	<input id="lastname" type="text" name="lastname"><br><br>
+	Birthday:
+	<input id="birthday" type="date" name="birthday""><br><br>
+	Gender:
+	<input type="radio" name="gender" value="male"> Male
+	<input type="radio" name="gender" value="female"> Female<br><br>
+	<!-- Adress -->
+	Province:
+	<select id="province">
+
+	</select><br><br>
+
+
+
+  <input type="button" onclick="onSubmit()" value="Submit">
+  <input type="reset" value="Cancel">
+</form>
+
+</body>
+<script type="text/javascript" src="js/home.js"></script>
+<script src="js/jquery-3.1.1.js"></script>
+
+</html>
