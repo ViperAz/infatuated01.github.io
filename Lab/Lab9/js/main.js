@@ -84,7 +84,7 @@ var vue = new Vue({
 				for (var i = 0; i < this.players.length-5; i++) {
 					console.log('ss');
 					reward.push({
-						"rewardId":0,
+						"rewardId":i+this.players.length,
 						"name" : "None",
 						"img_url" : "img/rewards/None.png"
 					});
@@ -102,7 +102,6 @@ var vue = new Vue({
 			this.players[this.currentPlayer].rewardId = rewardId;
 			this.isImgOpened = true ;
 			this.history.push(this.players[this.currentPlayer]);
-			console.log(rewardId);
 			setTimeout(function(){
     				alert(vue.showRewardName);
 				}, 100);
@@ -128,22 +127,26 @@ var vue = new Vue({
 		},
 
 		getRewardImg:function(rewardId){
-			for (var i = 0; i < this.rewards_history.length; i++) {
+			if(rewardId>5){
+				return this.rewards_history[0].img_url;
+			}
+			for (var i = 1; i < this.rewards_history.length; i++) {
+
 				if(this.rewards_history[i].rewardId == rewardId){
+					// console.log(this.rewards_history[i].img_url);
 					return this.rewards_history[i].img_url;
 				}
 			}
 		},
 		getRewardName(rewardId){
-			for (var i = 0; i < this.rewards_history.length; i++) {
-				console.log(this.rewards_history[i].name);
+			// for (var i = 0; i < this.rewards_history.length; i++) {
+			// 	console.log(this.rewards_history[i].name);
+			// }
+			if(rewardId>5){
+				return "Unlucky Try Again Next Time!!";
 			}
-			for (var i = 0; i < this.rewards_history.length; i++) {
+			for (var i = 1 ;i < this.rewards_history.length; i++) {
 				if(this.rewards_history[i].rewardId == rewardId){
-					if(this.rewards_history[i].name== "None"){
-						return "!!Unlucky Try Agiain Next Time!!";
-					}
-					console.log(i);
 					return "You Get "+this.rewards_history[i].name+" !!";
 				}
 			}
