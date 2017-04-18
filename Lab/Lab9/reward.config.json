@@ -1,0 +1,31 @@
+[
+{
+	"rewardId":1,
+	"name": "Arselnal Cookie",
+	"img_url": "img/rewards/Arsenal_cookie.jpg"
+
+},
+{
+	"rewardId":2,
+	"name": "Chupa Chup",
+	"img_url": "img/rewards/Chupa_Chup.jpg"
+
+},
+{
+	"rewardId":3,
+	"name": "Lux Soap",
+	"img_url": "img/rewards/Lux.jpg"
+
+},
+{
+	"rewardId":4,
+	"name": "!!Overwatch!!",
+	"img_url": "img/rewards/overwatch.jpg"
+
+},
+{
+	"rewardId":5,
+	"name": "pakking",
+	"img_url": "img/rewards/pakking.jpg"
+
+}]
